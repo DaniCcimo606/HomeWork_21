@@ -1,11 +1,15 @@
 
 // 1
 
-// function toDegree(num, degree) {
-//     return num ** degree;
-// }
+function toDegree(num, degree) {
+    if (degree === 0) {
+        return 1;
+    } else {
+        return num * toDegree(num, degree - 1);
+    }
+}
 
-// console.log(toDegree(4, 2));
+console.log(toDegree(4, 2));
 
 // 2
 
